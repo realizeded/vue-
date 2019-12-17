@@ -1,12 +1,9 @@
 <template>
     <div class="swiper">
-        <swiper :options="swiperOption" ref="mySwiper">
+        <swiper :options="swiperOption" ref="mySwiper" v-if="swiperList.length">
             <!-- slides -->
-            <swiper-slide>
-                <img src="https://dimg04.c-ctrip.com/images/zg061a0000019a76aAD00.png" alt="">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="https://dimg04.c-ctrip.com/images/zg0d1a0000018sh7i0217.jpg" alt="">
+            <swiper-slide v-for="item of swiperList" :key="item.id">
+                <img :src="item.imgUrl" alt="">
             </swiper-slide>
 
             <!-- Optional controls -->
@@ -18,12 +15,22 @@
     export default {
         data(){
             return {
+
                 swiperOption:{
                     pagination:'.swiper-pagination',
                     autoplay:3000,
                     loop:true
                 }
             };
+        },
+        props:{
+            swiperList:{
+                type:Array,
+                require:true,
+                default:function() {
+                    return [];
+                }
+            }
         }
     }
 </script>

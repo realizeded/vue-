@@ -5,10 +5,12 @@ import router from './router/index.js';
 import store from './store/index.js';
 Vue.productionTip = false;
 Vue.prototype.$axios = axios;
+axios.default.baseURL = "/api/";
 //------------------------------vue-awsome-swiper
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 // require styles
+
 import 'swiper/dist/css/swiper.css'
 
 Vue.use(VueAwesomeSwiper, /* { default global options } */)

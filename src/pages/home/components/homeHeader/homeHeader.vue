@@ -6,7 +6,7 @@
                 <span><i class="l-icon l-icon-search"></i>搜索城市/景点/游玩主题</span>
             </div>
         </div>
-        <div class="header-right">
+        <div class="header-right" @click="goToCity">
             <span>城市</span>
             <i class="l-icon l-icon-down-menu-arrow"></i>
         </div>
@@ -15,15 +15,21 @@
 <script>
 
     export default {
-        name:'home-header'
+        name:'home-header',
+        methods:{
+            goToCity() {
+                this.$router.push({path:'/city',query:{}});
+            }
+        }
     }
 </script>
 <style lang="less" scoped>
 @import "../../../../common/less/global";
+@import "../../../../common/less/variables";
 .header {
-    height: 43rem/@fontSize;
-    line-height:  43rem/@fontSize;
-    background-color:#00bcd4;
+    height:@height;
+    line-height:@lineHeight;
+    background-color:@headBgc;
     font-size: 16px;
     display: flex;
     width: 100%;
@@ -34,6 +40,7 @@
             width: 34rem/@fontSize;
             text-align: center;
             color: #FFF;
+
             .l-icon-back-arrow {
                 font-size: 24rem/@fontSize;
             }
