@@ -6,7 +6,7 @@ export default [
         name:'home',
         component:home,
         meta:{
-
+            isAlive:true
         }
     },
     {

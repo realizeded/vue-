@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="header-right" @click="goToCity">
-            <span>城市</span>
+            <span>{{$store.state.city}}</span>
             <i class="l-icon l-icon-down-menu-arrow"></i>
         </div>
     </div>
