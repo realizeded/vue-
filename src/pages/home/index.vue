@@ -13,10 +13,14 @@
     import homeIcons from './components/icons/index.vue';
     import homeRecommend from './components/Recommend/index.vue';
     import homeWeeken from './components/weeken/index.vue';
+    import {mapState} from 'vuex';
     export default {
         name:'home',
         data() {
-            return {list:{}};
+            return {
+                lastCity:"",
+                list:{},
+            };
         },
         components:{
             homeHeader,
@@ -27,7 +31,8 @@
         },
         methods:{
             async getHomeInfo() {
-                const {data:res} = await this.$axios.get('mock/index.json');
+
+                const {data:res} = await this.$axios.get('mock/index.json',{params:{city:this.city}});
 
                 if(res.ret)
                 {
@@ -37,8 +42,21 @@
             }
         },
         created() {
+            this.lastCity = this.city;
             this.getHomeInfo();
-        }
+
+        },
+        activated() {
+            if(this.lastCity!=""&&this.lastCity!==this.city)
+            {
+                this.lastCity = this.city;
+                this.getHomeInfo();
+
+            }
+        },
+        computed:{
+            ...mapState(['city'])
+        },
     }
 </script>
 <style lang="less" scoped>

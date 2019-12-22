@@ -5,7 +5,7 @@
     </div>
     <div class="body">
         <ul>
-            <li v-for="(item,index) in recommendList" :key="item.id+index">
+            <li v-for="(item,index) in recommendList" :key="item.id+index" @click="goToDetail(item.id)">
                 <div class="item">
                     <div class="item-img">
                         <img :src="item.imgUrl" alt="">
@@ -27,6 +27,12 @@
         data() {
             return {
 
+            }
+        },
+        methods:{
+            goToDetail(id)
+            {
+                this.$router.push(`/detail/${id}`);
             }
         },
         props:{

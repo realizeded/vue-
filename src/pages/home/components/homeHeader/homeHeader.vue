@@ -69,7 +69,7 @@
             }
         }
         &.header-right {
-            width: 62rem/@fontSize;
+            min-width: 62rem/@fontSize;
             text-align: center;
             color: #FFF;
             font-size: 14px;

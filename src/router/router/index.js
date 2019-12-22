@@ -1,5 +1,6 @@
 import home from '../../pages/home/index';
 import city from '../../pages/city/index';
+import detail from '../../pages/detail/index';
 export default [
     {
         path:'/',
@@ -16,5 +17,10 @@ export default [
         meta:{
 
         }
+    },
+    {
+        path:'/detail/:id',
+        name:'detail',
+        component:detail
     }
 ];

@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-    <keep-alive include="city,home">
+    <keep-alive include="home,city">
         <router-view></router-view>
     </keep-alive>
     </div>
@@ -9,7 +9,9 @@
     export default {
         name:'app',
         data(){
-            return {};
+            return {
+
+            };
         }
     }
 </script>
