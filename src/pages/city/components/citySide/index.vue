@@ -4,7 +4,7 @@
              v-for="item in citiesKey"
              :key="item"
              @click="handleChange(item)"
-             @touchstart="handleTouchStart"
+             @touchstart.prevent="handleTouchStart"
              @touchmove="handleTouchMove"
              @touchend="handleTouchEnd"
              :ref="item"

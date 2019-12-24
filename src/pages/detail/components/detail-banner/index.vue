@@ -15,15 +15,16 @@
                 </div>
             </div>
         </div>
-      <transition name="gallery">
-          <gallery v-show="isShowGallery" :imgs="imgs" @handGalleryClose="handGalleryClose"></gallery>
-      </transition>
-    </div>
+        <fade>
+        <gallery v-show="isShowGallery" :imgs="imgs" @handGalleryClose="handGalleryClose"></gallery>
+        </fade>
+  </div>
 
 </template>
 <script>
 import gallery from '../../../../components/gallery/index.vue';
 import detailHd from '../header/index';
+import fade from '../fadeAnimation/index';
     export default {
         name:'detail-banner',
         data() {
@@ -43,22 +44,15 @@ import detailHd from '../header/index';
         },
         components:{
             gallery,
-            detailHd
+            detailHd,
+            fade
         }
     }
 </script>
 <style lang="less" scoped>
 @import "../../../../common/less/global";
 @import "../../../../common/less/minxs";
-.gallery-enter,
-.gallery-leave-to {
-    opacity: 0;
-}
-.gallery-enter-active,
-.gallery-leave-active
-{
-    transition: all 500ms linear;
-}
+
 .banner {
     position: relative;
     .banner-img {

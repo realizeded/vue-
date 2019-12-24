@@ -39,8 +39,10 @@
         methods:{
             galleryClose() {
                 this.$emit('handGalleryClose');
+            
             }
-        }
+        },
+    
     }
 </script>
 <style lang="less" scoped>

@@ -28,6 +28,7 @@
                 this.$router.back();
             },
             handleScroll() {
+
             let top = document.body.scrollTop||document.documentElement.scrollTop;
                 let opacity = top/60;
                 opacity = opacity>1?1:opacity;
@@ -45,6 +46,9 @@
         mounted(){
             
             window.addEventListener('scroll',this.handleScroll);
+        },
+        beforeDestroy(){
+            window.removeEventListener('scroll',this.handleScroll);
         }
     }
 </script>
