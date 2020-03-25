@@ -1,4 +1,6 @@
 # 仿去哪网
+# 预览
+http://39.108.252.24:8000/#/
 ## Project setup
 ```
 npm install
