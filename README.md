@@ -1,6 +1,6 @@
 # Vue.js开发去哪儿网WebAapp 
 # 预览
- [点击显示项目功能介绍gif](https://github.com/realizeded/photo/blob/master/gif1.gif)
+ [点击显示项目功能介绍gif](http://39.108.252.24:4000/gif1.gif)
 ## 功能页面
 * 1 首页:实现了多区域轮播的功能，以及多区域列表的展示
 
