@@ -2,7 +2,7 @@
 # 预览
 [点击预览项目演示gif](https://github.com/realizeded/photo/blob/master/gif1.gif?raw=true)
  
-##功能页面
+## 功能页面
 * 1 首页:实现了多区域轮播的功能，以及多区域列表的展示
 
 * 2 热门推荐景点详情页: 实现公用的画廊组件，以及递归展示的列表组件。
