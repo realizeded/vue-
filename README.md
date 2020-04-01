@@ -1,3 +1,3 @@
 # 仿去哪网
 # 预览
-<img src="https://github.com/realizeded/photo/blob/master/gif1.gif" alt="show" />
+<img src="http://39.108.252.24:4000/gif1.gif" alt="show" />
