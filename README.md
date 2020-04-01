@@ -1,6 +1,6 @@
 # Vue.js开发去哪儿网WebAapp 
 # 预览
- ![image](http://localhost:8000/gif1.gif)
+ ![image](http://localhost:8080/gif1.gif)
 ## 功能页面
 * 1 首页:实现了多区域轮播的功能，以及多区域列表的展示
 
