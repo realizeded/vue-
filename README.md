@@ -18,7 +18,7 @@
 * 6.使用了缓存还有就是用了精灵图技术
 * 7.图片优化-使用了webp格式的图片 
 
-## 开发环境webpack打包性能优化(使用vue-cli3):
+## 开发环境webpack打包性能优化(使用vue-cli3 所以自带webpack-dev-server):
 * 1.代码分割 
 * 2.使用Dllplugin
 * 3.使用的plugin和loader都是webpack官方推荐的
