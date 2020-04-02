@@ -18,12 +18,11 @@
 * 6.使用了缓存还有就是用了精灵图技术
 * 7.图片优化-使用了webp格式的图片 
 
-## 开发环境webpack打包性能优化:
-* 1.使用webpack-dev-server 内存编译
-* 2.代码分割 
-* 3.使用Dllplugin
-* 4.使用的plugin和loader都是webpack官方推荐的
-* 5.打包报告分析替换 以及 tree shaking去除模块多余的部分
+## 开发环境webpack打包性能优化(使用vue-cli3):
+* 1.代码分割 
+* 2.使用Dllplugin
+* 3.使用的plugin和loader都是webpack官方推荐的
+* 4.打包报告分析替换 以及 tree shaking去除模块多余的部分
 ## 解决首屏加载问题
 * 1.使用gzip
 * 2.使用路由懒载、组件懒加载
